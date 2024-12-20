@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron James Esteban</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #FFD700;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFD700;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            border-bottom: 3px solid #FFD700;
+        }
+
+        header .logo h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FFD700;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 4px solid #FFD700;
+        }
+
+        .socials a {
+            margin-right: 20px;
+            background-color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .socials a:hover {
+            background-color: #ff4500;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 10px;
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .content img {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Biker-Themed Style */
+        .biker-theme {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .biker-theme h2 {
+            color: #FFD700;
+        }
+
+        .biker-theme ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .biker-theme .socials a {
+            background-color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .biker-theme .socials a:hover {
+            background-color: #ff4500;
+            color: #fff;
+        }
+
+        /* Animated Text for Biker Theme */
+        .moving-text {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FF6347;
+            animation: moveText 5s linear infinite;
+            letter-spacing: 3px;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .biker-background {
+            background-image: url('biker_background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .biker-background h2, .biker-background p {
+            color: #fff;
+        }
+
+        .biker-background img {
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Welcome to Aaron's Biker Portfolio!");
+        });
+    </script>
+</head>
+<body class="biker-theme">
+    <header>
+        <div class="logo">
+            <h1>Aaron James Esteban</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="biker-background">
+            <h2>About Me</h2>
+            <div class="content">
+                <img src="random_profile.jpg" alt="Aaron's Photo">
+                <p>
+                    I'm Aaron, a hardcore biker with a love for adventure and the open road. When I'm not riding, I'm diving deep into tech and innovation. I thrive on adrenaline, whether it's on two wheels or working on a new project.
+                </p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Motorcycle Mechanics</li>
+                <li>Tech Innovator</li>
+                <li>Web Development</li>
+                <li>Photography</li>
+            </ul>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Long-Distance Biking</li>
+                <li>Riding Custom Motorcycles</li>
+                <li>Graphic Design</li>
+                <li>Road Trips</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="socials">
+                <a href="https://www.facebook.com/aaron.esteban" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/aaron_ride" target="_blank">Instagram</a>
+                <a href="mailto:aaron.esteban@email.com">Email</a>
+            </div>
+        </section>
+        <section id="School">
+            <div class="moving-text">
+                Road Warriors Academy
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Aaron James Esteban Portfolio.</p>
+    </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron James Esteban</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #FFD700;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFD700;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            border-bottom: 3px solid #FFD700;
+        }
+
+        header .logo h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FFD700;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 50px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 4px solid #FFD700;
+        }
+
+        .socials a {
+            margin-right: 20px;
+            background-color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .socials a:hover {
+            background-color: #ff4500;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 10px;
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .content img {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Biker-Themed Style */
+        .biker-theme {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .biker-theme h2 {
+            color: #FFD700;
+        }
+
+        .biker-theme ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .biker-theme .socials a {
+            background-color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .biker-theme .socials a:hover {
+            background-color: #ff4500;
+            color: #fff;
+        }
+
+        /* Animated Text for Biker Theme */
+        .moving-text {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FF6347;
+            animation: moveText 5s linear infinite;
+            letter-spacing: 3px;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .biker-background {
+            background-image: url('biker_background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .biker-background h2, .biker-background p {
+            color: #fff;
+        }
+
+        .biker-background img {
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Welcome to Aaron's Biker Portfolio!");
+        });
+    </script>
+</head>
+<body class="biker-theme">
+    <header>
+        <div class="logo">
+            <h1>Aaron James Esteban</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="biker-background">
+            <h2>About Me</h2>
+            <div class="content">
+                <img src="random_profile.jpg" alt="Aaron's Photo">
+                <p>
+                    I'm Aaron, a hardcore biker with a love for adventure and the open road. When I'm not riding, I'm diving deep into tech and innovation. I thrive on adrenaline, whether it's on two wheels or working on a new project.
+                </p>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Motorcycle Mechanics</li>
+                <li>Tech Innovator</li>
+                <li>Web Development</li>
+                <li>Photography</li>
+            </ul>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Long-Distance Biking</li>
+                <li>Riding Custom Motorcycles</li>
+                <li>Graphic Design</li>
+                <li>Road Trips</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="socials">
+                <a href="https://www.facebook.com/aaron.esteban" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/aaron_ride" target="_blank">Instagram</a>
+                <a href="mailto:aaron.esteban@email.com">Email</a>
+            </div>
+        </section>
+        <section id="School">
+            <div class="moving-text">
+                Road Warriors Academy
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Aaron James Esteban Portfolio.</p>
+    </footer>
+</body>
+</html>
